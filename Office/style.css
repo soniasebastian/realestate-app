@@ -1,0 +1,12 @@
+
+.card{
+    border:solid;
+    width: 50%;
+    margin:0.2rem;
+    text-align: center;
+}
+
+.details{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}

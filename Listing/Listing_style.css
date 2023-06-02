@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:60px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    /* box-shadow: 0px 6px 0px rgba(0,0,0,0.2); */
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+}
+
+
+#map {
+    height: 400px;
+    width: 400px;
+    /* border-radius: 10px; */
+  }
