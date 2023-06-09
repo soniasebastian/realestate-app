@@ -1,34 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Real Estate App</title>
-    <link rel="stylesheet" href="./Listing/Listing_style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Real Estate App</title>
+  <link rel="stylesheet" href="./Listing/Listing_style.css">
+  <link rel="stylesheet" href="../Index/style_index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="listing-main-container">
-        <nav class="nav-bar">
-            <img src="" alt="logo" class="applogo"/>
-            <h2 class="appname">Real Estate App</h2>
+  <div class="listing-main-container">
 
-            <ul class="menu">
-                <li><a class="menu-listings">Listings</a></li>
-                <li><a class="menu-openhouse">Open House</a></li>
-                <li><a class="menu-agent">Agent Finder</a></li>
-                <li><a class="menu-member">Members</a></li>
-                <li><a class="menu-agent-office">Agent Office</a></li>
-            </ul>
-        </nav>
 
-        <div style="margin: 100px 400px;">
-            <h1>LISTINGS </h1>
+<!-- <nav class="bg-[#59677f] border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <a href="../index.html" class="flex items-center appname">
+        <img src="../Index/IndexAsset/RealtyReachLogo1.png" class="h-8 mr-5 applogo" alt="Flowbite Logo" />
+        <span class="ml-2 self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">Realty Reach</span>
+    </a>
+
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        
+        <li>
+          <a href="./listings.html" class="block py-2 pl-3 pr-4 text-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-blue-700 md:dark:text-skyblue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-openhouse">Listings</a>
+        </li>
+        <li>
+          <a href="../OpenHouse/openhouse.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:text-skyblue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-openhouse">Open House</a>
+        </li>
+        <li>
+          <a href="../Agents/agents.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-skyblue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-agent">Agent Finder</a>
+        </li>
+        <li>
+          <a href="../member/member.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-skyblue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-member">Members</a>
+        </li>
+        <li>
+          <a href="../Office/office.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-skyblue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-agent-office">Agent Office</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="bg-[#59677f] border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <a href="./index.html" class="flex items-center appname">
+        <img src="./Index/IndexAsset/RealtyReachLogo1.png" class="h-8 mr-3 applogo" alt="Flowbite Logo" />
+        <span class="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">Realty Reach</span>
+    </a>
+
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="./listings.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:text-sky-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-listings">Listings</a>
+        </li>
+        <li>
+          <a href="./openhouse.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:text-sky-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-openhouse">Open House</a>
+        </li>
+        <li>
+          <a href="./agents.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-sky-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-agent">Agent Finder</a>
+        </li>
+        <li>
+          <a href="./member.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-sky-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-member">Members</a>
+        </li>
+        <li>
+          <a href="./office.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-400 md:p-0 dark:text-white md:dark:hover:text-sky-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent menu-agent-office">Agent Office</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- <h1>LISTINGS </h1> -->
+
+
+    <div class="listfilter-main bg-[#00bddc] p-1 .rounded center">
+      <!-- //drop down input-city -->
+      <span class="select-city">
+        <select class="select-dd .rounded-md .rounded-sm mr-8 p-1" onchange="FilterByCity()">
+          <option value="0">Select a city: </option>
+          <option value="1">Destineyhaven</option>
+          <option value="2">Aniyahville</option>
+          <option value="3">North Arturo</option>
+          <option value="4">Breitenbergland</option>
+          <option value="5">Brownburgh</option>
+          <option value="6">South Arianna</option>
+          <option value="7">Kelsiside</option>
+          <option value="8">West Joyce</option>
+          <option value="9">Zettaview</option>
+          <option value="10">Lake Stephan</option>
+        </select>
+      </span>
+
+      <!-- //drop down input-MLS Status -->
+      <span class="select-mlsStatus">
+        <select class="select-mls .rounded-md .rounded-sm mr-8 p-1" onchange="FilterByMlsStatus()">
+          <option value="0">Select a MLS Status: </option>
+          <option value="1">Active</option>
+          <option value="2">Canceled</option>
+          <option value="3">Expired</option>
+        </select>
+      </span>
+
+      <span class="favourites">Favourites</span>
+      <span class="reset" onclick="getApiData()">Reset Filter</span>
+    </div>
+
+
+
+    <div class="list-main center">
+    </div>
+
+
+    <div class="pagination-main center">
+      <button class="page1">1</button>
+      <button class="page2">2</button>
+    </div>
+
+    <!-- //modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <span class="closebtn">&times;</span>
+
+        <div>Listing ID : <span class="modal-list-id">Listing ID</span></div>
+
+
+        <div class="modal-image-wrapper">
+          <button class="modal-image-left"><svg class="svgarrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <style>
+                .svgarrow {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg></button>
+          <img class="modal-image" src="..." alt="model-images">
+          <button class="modal-image-right"><svg class="svgarrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+              <style>
+                .svgarrow {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg></button>
         </div>
 
-</div>
-    
+        <div class="modal-text-wrapper center">
+            <div class="modal-left">
+              <div>MLS Status : <strong><span class="modal-list-mlsStatus">MLS Status</span></strong></div>
+              <div>List Price : <strong><span class="modal-list-price">Original List Price</span></strong></div>
+              <div>Property Type : <strong><span class="modal-list-PropertyType">PropertyType</span></strong></div>
+              <div>Year Built : <strong><span class="modal-list-YearBuilt">YearBuilt</span></strong></div>
+              <div>Number of Bedrooms : <strong><span class="modal-list-Bedrooms">BedroomsTotal</span></strong></div>
+              <div>Lot Size Dimensions : <strong><span class="modal-list-LotSizeDimensions">YearBuilt</span></strong></div>
+              <!-- <div>Year Built : <strong><span class="modal-list-YearBuilt">YearBuilt</span></strong></div> -->
+              <div>List Agent Name : <strong><span class="modal-list-ListAgentName">YearBuilt</span></strong></div>
+            </div>
+
+
+
+            <div class="modal-right">
+              <iframe class="google-maps" width="400" height="300" style="border:0" loading="lazy" title="map"
+                allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
-    <script src="./Listing/Listing_script.js"></script>
+<script src="./Listing/Listing_script.js"></script>
+<script src="./Listing/Listing_ImgAsset.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
 </html>

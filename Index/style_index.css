@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .nav-bar{
@@ -9,8 +10,10 @@
     justify-content: space-evenly;
     align-items: center;
     height:60px;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    /* box-shadow: 0px 6px 0px rgba(0,0,0,0.2); */
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.332);
+    background-color: #59677f;
+    color:white;
 }
 
 .menu{
@@ -18,24 +21,321 @@
     display: flex;
     justify-content: space-evenly;
     width:50%;
+    list-style: none;
+    color:white;
 }
 
-.input-city{
-    display:flex;
+.center{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:150px;
 }
 
-.search-input{
-    width:500px;
-    height:40px;
-    border-radius:30px;
-    padding:15px;
-    border: 2px solid lightgrey;
+
+
+
+.appname,.applogo,.menu{
+    cursor: pointer;
 }
 
-.dayForcast{
-    width: 500px !important;
+.menu-listings,.menu-openhouse,.menu-agent,.menu-member,.menu-agent-office{
+    text-decoration: none;
+    color:white;
 }
+
+.menu-listings:hover{
+    height: 2px;
+    width:50px;
+    color: #47d5eb;
+}
+
+.applogo{
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+    border:1px solid white;
+    padding:5px;
+    background-color: #59677f;
+    margin-left:-80px;
+}
+
+
+.main-skylineimg-container{
+    width:100%;
+}
+
+.main-skylineimg{
+    width:100%;
+    height:75vh;
+  }
+
+
+
+
+
+.listings-main{
+    width:80%;
+    background-color: #cfdce2;
+    margin-left: calc(100% - 90%);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.listings-left{
+    background-color: #fbb017;
+    width:50%;
+    height:100%;
+    border: 1px solid black;
+}
+
+.listings-left > *{
+    margin-bottom: 10px;
+}
+
+.index-list2,.index-list1{
+    margin:20px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.listing-btn{
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: none;
+    background-color: #00bddc;
+    color: white;
+}
+
+.listing-btn:hover{
+    background-color: #47d5eb;
+    cursor: pointer;
+}
+
+.listings-right{
+    width:50%;
+    height:100%;
+}
+
+
+
+
+
+.realtyreach-team-container{
+    width:calc(100% - 20%);
+    height:25%;
+    margin-top: 30px;
+    background-color: #ecf1f4;
+    /* background-color: #d1d5db; */
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+
+.realtyreach-team-container>h2{
+    margin-left: calc(100% - 90%);
+    margin-top: 20px;
+    padding: 20px;
+}
+  
+.all-dev-img > div{
+    margin-left: 50px;
+}
+
+
+.name{
+    margin-bottom: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+.role{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.index-team{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.developers-img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width:400px){
+    .main-skylineimg{
+        width:100%;
+        height:50vh;
+      }
+
+      .listings-main{
+        display:inline-block;
+    }
+    
+    .index-list2,.index-list1{
+        margin:20px;
+        font-weight: 600;
+    }
+    
+    .listings-left > *{
+        padding:20px !important;
+    }
+
+    .listing-leftimg{
+        margin:auto;
+    }
+    
+    .listing-btn{
+        margin-left:calc(100% - 70%);
+        margin-top: 0px !important;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+
+
+    
+
+    .all-dev-img{
+        display: inline-block;
+    }
+
+    .all-dev-img > div{
+        margin-bottom: 40px;
+        margin-left: calc(100% - 15%);
+        width:100%;
+    }
+      
+    
+    .name{
+        margin-bottom: 5px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+
+    .role{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .index-team{
+        font-weight: 800;
+        font-size: 20px;
+
+    }
+    
+    .developers-img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) and (min-width:400px){
+    .main-skylineimg{
+        width:100%;
+        height:50vh;
+      }
+
+
+      .listings-main{
+        display:inline-block;
+        height: fit-content;
+    }
+    
+    .index-list2,.index-list1{
+        margin:20px;
+        font-weight: 600;
+        font-size: large;
+        text-align: center;
+    }
+    
+    .listings-left > *{
+        padding:20px !important;
+    }
+
+    .listing-leftimg{
+        margin:auto;
+    }
+
+    .listing-right{
+        height:300px;
+    }
+    
+    .listing-btn{
+       display: block;
+        /* margin-left:calc(100% - 70%); */
+        margin-top: 0px !important;
+        font-size: 15px;
+        font-weight: 700;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin: auto;
+    }
+    
+
+
+    
+
+    .all-dev-img{
+        display: inline-block;
+    }
+
+    .all-dev-img > div{
+        margin-bottom: 40px;
+        margin-left: calc(100% - 15%);
+        width:100%;
+    }
+      
+    
+    .name{
+        margin-bottom: 5px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+
+    .role{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .index-team{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    .developers-img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
 

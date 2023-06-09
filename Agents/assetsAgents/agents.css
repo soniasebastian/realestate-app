@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:60px;
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.332);
+    background-color: #59677f;
+    color:white;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+    list-style: none;
+    color:white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appname,.applogo,.menu{
+    cursor: pointer;
+}
+
+
+
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: #f3f6fa;
+    border-style: solid;
+}
+
+a{
+    text-decoration: none;
+    color: #f3f6fa;
+}
+
+.menu-listings,.menu-openhouse,.menu-agent,.menu-member,.menu-agent-office{
+    text-decoration: none;
+    color:white;
+}
+
+.menu-listings:hover{
+    height: 2px;
+    width:50px;
+    color: #47d5eb;
+}
+
+
+header {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 28px;
+   font-weight: bold;
+   height:200px;
+   background-image: url(reagent.jpg);
+   background-position:center center;
+   background-size:cover;
+   background-color: #59677f;
+   height:200px;
+   background-position:center center;
+}
+
+input {
+    justify-content: center;
+    padding: 20px;
+    margin: 25px;
+    font-size: 20px;
+    border-style: solid;
+}
+
+/* .agent-display{
+  margin: 50px;
+  width:75%;
+  background-color: #9fa8b7;
+  border-color: #59677f;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0px 10px 13px -7px #000000;
+} */
+
+/* h4{
+    margin: 50px;
+    font-weight: bold;
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #d4dae2;
+    border-radius: 0.5rem;
+} */
+
+/* p{
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+} */
+
+footer{
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#59677f;
+    color: #F3F6FA
+    
+}
+
+.footer{
+    margin: 5px;
+    align-items:center;
+}

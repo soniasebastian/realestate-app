@@ -1,53 +1,146 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.element-selector {
+
+  all: revert;
+}
+
+.applogo{
+  height:50px;
+  width: 50px;
+  border-radius: 50px;
+  border:1px solid white;
+  padding:5px;
+  background-color: #59677f;
+  margin-left:-80px;
+}
+
+#para{
+  margin-top: 3%;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 .nav-bar{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height:60px;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height:60px;
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+      background-color: #59677f;
+      color: white;
+  }
+
+  body{
+      background-color: #F3F6FA;
+  }
 
 .menu{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width:50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width:50%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header{
-    margin-top: 5%;
-    margin-left: 40%;
-    border: solid;
-    margin-right:40%;
-    text-align: center;
+.menu-listings:hover{
+  height: 2px;
+  width:50px;
+  color: #47d5eb;
 }
 
+a{
+  color:#F3F6FA;
+   text-decoration: none;
+}
+
+#header{
+  text-align: center;
+  font-family: "proxima-nova",sans-serif;
+  font-size: 1.5rem;
+  background: url(./images/defaultimg.jpg);
+  height:250px;
+  background-position:center center;
+  background-size:cover;
+}
+header h2{
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  padding:50px;
+}
 #format-input{
-    margin-top: 20px;
-    margin-left:45%;
-   
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
 }
-
 .card{
-    margin-left: 30%;
-    width: 40%;
-    color: red;
-    display: inline-block;
-    margin-top: 60px;
-    border: black dotted;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding:2%;
-
+  width:100%;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+h1{
+  text-align: center;
+  color: white;
+  background-color: #59677f;
+  font-size: 30px !important;
 }
 
 .memberdata{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  text-align: left;
+  color: black;
+  padding:0.5rem;
+  width: 100%;
 }
+.location {
+  text-align: center;
+  width: 26%;
+  margin-top: 10px;
+  margin-right: 5px;
+  float: right;
+  border: 1px solid;
+}
+.mainCard {
+  width: 68%;
+  float: left;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+  
+}
+.mainSection {
+  width: 100%;
+  position: absolute;
+}
+.member-location{
+  width: 100%;
+  position: absolute;
+}
+.memberDetails {
+  width: 70%;
+  float: left;
+}
+.memberImg {
+  width: 30%;
+  float: right;
+  height:280px;
+}
+
+.defaultImg {
+  width: 100%;
+  height:300px;
+}
+
+ #footer{
+  position: relative;
+  width: 100%;
+  float: right;
+} 
